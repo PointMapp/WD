@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin: $mar;
+    padding: $pad;
+    box-sizing: $box;
+}
+
+body{
+    font-family: "Roboto";
+    font-size: $font;
+    color: $color-72;
+}
+
+a{
+    text-decoration: $text-dec;
+    color: $black;
+}
+
+h1{
+    font-size: $fonts;
+}
+
+h2, h3, h4, h5, h6{
+    color: $black;
+}
+
+.wrapper{
+    max-width: $max;
+    margin: $mar auto;
+}
