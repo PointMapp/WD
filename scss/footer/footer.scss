@@ -1,7 +1,23 @@
 .content{
-    background-color: blue;
+    background-color: rgba(52, 84, 122, 1);
     color: white;
     flex: 0 0 auto;
     padding: 50px 0;
+
+    .trash{
+        max-width: $max;
+        margin: $mar auto;
+        align-content: space-between;
+        flex-direction: column;
+    }
+    
+    &__inf{
+        flex-direction: column;
+    }
+
+    &__media{
+        max-width: $max;
+        margin: $mar auto; 
+    }
 }
 
