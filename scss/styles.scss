@@ -5,10 +5,21 @@
     box-sizing: $box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: "Roboto";
     font-size: $font;
     color: $color-72;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
 }
 
 a{

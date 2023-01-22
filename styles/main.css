@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   height: 100%;
 }
 
@@ -13,9 +13,13 @@ body {
   font-family: "Roboto";
   font-size: 16px;
   color: #727272;
+  min-height: 100%;
   display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 a {
@@ -39,28 +43,25 @@ h2, h3, h4, h5, h6 {
 .header {
   background-color: #EEEFF1;
   padding: 72px 0;
-  flex:0 0 auto;
+  flex: 0 0 auto;
+}
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .header__logo {
-  float: left;
   width: 85px;
   display: block;
+  flex: 0 0 auto;
 }
 .header__logo img {
   width: 100%;
 }
-.header__nav {
-  float: right;
-}
 .header__nav ul {
   list-style: none;
-}
-.header__nav li {
-  float: left;
-  margin-right: 42px;
-}
-.header__nav li:last-of-type {
-  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
 }
 .header__item {
   text-transform: uppercase;
@@ -70,14 +71,15 @@ h2, h3, h4, h5, h6 {
 .header__item:hover {
   color: #000000;
 }
-@media (max-width: 576px) {
-  .header__nav ul {
-    float: none;
+@media (max-width: 780px) {
+  .header .wrapper {
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-main{
-  flex:1 0 auto;
+  .header ul {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .content {
