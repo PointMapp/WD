@@ -3,21 +3,23 @@
     color: white;
     flex: 0 0 auto;
     padding: 50px 0;
-
-    .trash{
-        max-width: $max;
-        margin: $mar auto;
-        align-content: space-between;
+    row-gap: 20px;
+    align-content: flex-end;
+    
+    &__inf{
+        display:flex;
+        row-gap: 20px;
         flex-direction: column;
     }
     
-    &__inf{
-        flex-direction: column;
+    .wrapper1{
+        max-width: $max;
+        margin: $mar auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__media{
-        max-width: $max;
-        margin: $mar auto; 
-    }
+
 }
 
