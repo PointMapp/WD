@@ -103,4 +103,57 @@ h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.about {
+  padding: 100px 0;
+}
+.about_gray {
+  background-color: #EEEFF1;
+}
+.about .wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 57px;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  row-gap: 50px;
+  width: 100%;
+}
+.about__video {
+  width: 100%;
+}
+.about__video video {
+  width: 100%;
+}
+
+.center {
+  background-color: rgb(52, 84, 122);
+  padding: 100px 0;
+}
+.center .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+.center__text {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 780px) {
+  .center .wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.pick {
+  display: flex;
+  column-gap: 20px;
+  color: #EEEFF1;
+}
+
 /*# sourceMappingURL=main.css.map */

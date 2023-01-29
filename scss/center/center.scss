@@ -1,0 +1,31 @@
+.center{
+  background-color:  rgba(52, 84, 122, 1); 
+  padding: 100px 0;
+
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  &__img{}
+
+
+  &__text{
+    display:flex;
+    flex-direction: column;  
+  }
+
+  @media (max-width: 780px){ 
+    .wrapper{
+        flex-direction: row;
+        align-items: center;
+    }
+  }
+}
+
+.pick{
+    display: flex;
+    column-gap: 20px;
+    color:$gray;
+}

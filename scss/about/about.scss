@@ -1,0 +1,31 @@
+.about{
+    padding: 100px 0;
+
+    &_gray{
+        background-color:$gray;
+    }
+
+    .wrapper{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 57px;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        max-width: 540px;
+        row-gap: 50px;
+        width: 100%;
+    }
+
+    &__video{
+        width: 100%;
+        video{
+           width:100% 
+        }
+    }
+
+}
